@@ -20,7 +20,7 @@ kesimpulan cari angka nya jumlah yang jumlahnya sama dengan (D) dengan maksimal 
 
 // kesimpulan cari angka nya jumlah yang jumlahnya sama dengan (D) dengan maksimal element adalah dari (M) cari di data (S) kembalikan lah jumlah berapa banyak data yang bisa di ambil
 
-func birthday(s []int32, d int32, m int32) int32 {
+func Birthday(s []int32, d int32, m int32) int32 {
 	var tempTotalResult int32
 	var result int32
 
