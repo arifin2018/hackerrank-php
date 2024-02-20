@@ -95,3 +95,8 @@ func TestBonAppetit(t *testing.T) {
 	// test6 := DayOfProgrammer(1918)
 	// assert.Equal(t, "26.09.1918", test6)
 }
+
+func TestSockMerchant(t *testing.T) {
+	test2 := SockMerchant(9, []int32{10, 20, 20, 10, 10, 30, 50, 10, 20})
+	assert.Equal(t, int32(3), test2)
+}
