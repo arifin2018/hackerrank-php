@@ -100,3 +100,20 @@ func TestSockMerchant(t *testing.T) {
 	test2 := SockMerchant(9, []int32{10, 20, 20, 10, 10, 30, 50, 10, 20})
 	assert.Equal(t, int32(3), test2)
 }
+
+func TestPageCount(t *testing.T) {
+	// test1 := PageCount(6, 5)
+	// assert.Equal(t, int32(1), test1)
+	// test2 := PageCount(6, 2)
+	// assert.Equal(t, int32(1), test2)
+	// test3 := PageCount(5, 4)
+	// assert.Equal(t, int32(0), test3)
+	// test4 := PageCount(5, 3)
+	// assert.Equal(t, int32(1), test4)
+	// test5 := PageCount(7, 4)
+	// assert.Equal(t, int32(1), test5)
+	// test6 := PageCount(7, 3)
+	// assert.Equal(t, int32(1), test6)
+	test7 := PageCount(6, 3)
+	assert.Equal(t, int32(1), test7)
+}
