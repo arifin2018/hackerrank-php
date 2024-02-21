@@ -1,11 +1,13 @@
 package Go
 
+import "math"
+
 // https://www.hackerrank.com/challenges/drawing-book/problem
 /**
 n = jumlah halaman buku
 p = nomor halaman yang akan ingin di tuju
 */
-func PageCount(n int32, p int32) int32 {
+func PageCountMySelf(n int32, p int32) int32 {
 	var turningFrontPage int32 = 1
 	var turningBackPage int32 = 1
 	var result int32
@@ -61,4 +63,32 @@ func PageCount(n int32, p int32) int32 {
 	}
 
 	return result
+}
+
+/*
+*
+-1
+2 3
+4 5
+-67
+*/
+func PageCount(n int32, p int32) int32 {
+	var frontCount int32
+	var backCount int32
+	if p == 1 || p == n {
+		return 0
+	}
+	if n%2 != 0 {
+		if p-1 == n {
+			return 0
+		}
+	}
+	frontCount = int32(math.Floor(float64(p / 2)))
+	backCount = int32(math.Floor(float64(n/2 - p/2)))
+
+	if frontCount < backCount {
+		return frontCount
+	} else {
+		return backCount
+	}
 }
