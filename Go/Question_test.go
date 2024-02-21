@@ -117,3 +117,14 @@ func TestPageCount(t *testing.T) {
 	test7 := PageCount(6, 3)
 	assert.Equal(t, int32(1), test7)
 }
+
+func TestCountingValleys(t *testing.T) {
+	test1 := CountingValleys(12, "DDUUDDUDUUUD")
+	assert.Equal(t, int32(2), test1)
+	test2 := CountingValleys(8, "UDDDUDUU")
+	assert.Equal(t, int32(1), test2)
+	test3 := CountingValleys(10, "UDUUUDUDDD")
+	assert.Equal(t, int32(0), test3)
+	test4 := CountingValleys(10, "DUDDDUUDUU")
+	assert.Equal(t, int32(2), test4)
+}
