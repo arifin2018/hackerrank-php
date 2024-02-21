@@ -62,30 +62,3 @@ func PageCount(n int32, p int32) int32 {
 
 	return result
 }
-
-// if p == 1 {
-// 	return 0
-// } else if p == n || p == n-1 {
-// 	return 0
-// } else if p%2 != 0 {
-// 	p--
-// }
-
-// for i := 2; i < int(n); i++ {
-// 	if int32(i) == p {
-// 		result = turningFrontPage
-// 		break
-// 	}
-// 	if i%2 != 0 {
-// 		turningFrontPage++
-// 	}
-// }
-// for i := int(n - 1); i >= 2; i-- {
-// 	if int32(i) == p && (result > turningBackPage || result == 0) {
-// 		result = turningBackPage
-// 		break
-// 	}
-// 	if i%2 != 0 {
-// 		turningBackPage++
-// 	}
-// }
